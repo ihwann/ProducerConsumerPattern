@@ -33,8 +33,14 @@
         4. 주요 고려사항과 클래스 설계를 README.md에 서술
 */
 
+import Producer.Producer;
+
 public class RunProducerConsumer {
     public static void main(String[] args) {
-        System.out.println("hello");
+        System.out.println("start Producer-Consumer Pattern");
+
+        Producer producer = new Producer();
+
+        producer.runProducer();
     }
 }
